@@ -1,0 +1,22 @@
+section.Tuits
+  article.goingOn#goingOn
+    .row.align-center
+      .columns.small-1.goingOn-cover
+        img.cover-small(src="images/alexa.jpg", alt="")
+      .columns.small-10.goingOn-goingon
+        input(type="text" placeholder="¿Qué está pasando?" class="box" id="twittear")
+        span.fa.fa-picture-o.picture
+        .row.goingOn-goingon-panel.align-justify#panel
+          .columns.small-6.icons
+            span.fa.fa-picture-o
+            span.fa.fa-heart-o
+            span.fa.fa-bar-chart
+            span.fa.fa-map-marker
+          .columns.small-4.text-right.twittear
+            span.caracteres 140
+            button.btn.btn-primary(type="submit") Twittear
+  article.Tuits-new
+    p Ver 35 Tweets nuevos
+  section.Tweets
+    each item in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+      include tweet.jade

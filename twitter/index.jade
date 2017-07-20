@@ -1,0 +1,23 @@
+doctype
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name="description" content="Todo el código que aquí aparece lo hice en dos días tomando como ejemplo la plataforma de Twitter a la fecha de Junio de 2017. Todos los derechos del diseño son propiedad de Twitter.")
+    title (35) Twitter
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900", attr)
+    link(rel="stylesheet", href="lib/foundation/css/foundation.min.css", attr)
+    link(rel="stylesheet", href="lib/font-awesome/css/font-awesome.min.css", attr)
+    link(rel="stylesheet", href="css/app.css", attr)
+  body
+    include ./includes/header.jade
+    section.Content
+      .row
+        article.columns.small-3
+          include ./includes/profile-trends.jade
+        article.columns.small-6
+          include ./includes/tuits.jade
+        article.columns.small-3
+          include ./includes/follow-copy.jade
+    script(src="http://code.jquery.com/jquery-2.2.4.min.js")
+    script(src="js/twitter.js")
+    script(src="lib/jquery.sticky.js")

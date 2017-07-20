@@ -1,0 +1,63 @@
+
+/* ------------------------------------------------
+ ## Profile
+------------------------------------------------ */
+
+.Profile
+  &-header
+    position relative
+    .photo
+      position absolute
+      bottom -36px
+      redondo()
+      border 3px solid white
+      size 72px
+      left 10px
+  &-name
+    text-align left
+    width 70%
+    margin 0 0 0 auto
+    padding-top 10px
+    .name
+      font-size 20px
+      font-weight $fontBold
+      margin 0
+      &:hover
+        text-decoration underline
+        cursor pointer
+    .username
+      font-size 14px
+      color $colorSecundario
+      margin 0
+      &:hover
+        text-decoration underline
+        cursor pointer
+  &-statistics
+    padding 10px 15px
+    h5
+      color #657786
+      font-size 13px
+      font-weight $fontBold
+      margin 0 0 -5px
+    h6
+      color $colorSecundario
+      font-size 20px
+      font-weight $fontBlack
+      margin 0
+
+/* ------------------------------------------------
+ ## Trends
+------------------------------------------------ */
+
+.Trends
+  padding 15px
+  &-trends
+    h3
+      font-size 15px
+      color $colorSecundario
+      font-weight $fontBlack
+      .quantity
+        color $color
+        font-weight $fontRegular
+        font-size 12px
+        display block

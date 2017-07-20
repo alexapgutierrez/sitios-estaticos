@@ -1,0 +1,47 @@
+/* ------------------------------------------------
+ ## Who Follow
+------------------------------------------------ */
+
+.whoFollow
+  padding 15px
+  &-who
+    .who
+      border-bottom 1px solid $grisClaro
+      padding 5px 0 10px
+      .photo
+        float left
+        size 50px
+        redondo()
+        margin-right 5px
+      &-data
+        overflow hidden
+        .name
+          font-weight $fontBold
+          float left
+          font-size 14px
+          color $color
+        .username
+          color $colorSecundario
+          float right
+          font-size 14px
+          span
+            font-size 13px
+            margin-left 13px
+
+/* ------------------------------------------------
+ ## Copy
+------------------------------------------------ */
+
+.Copy
+  padding 15px
+  .text
+    line-height 1.4
+    span
+      color #657786
+      padding-right 6px
+      cursor pointer
+      display inline-block
+      font-size 13px
+      &:hover
+        color $colorSecundario
+        text-decoration underline

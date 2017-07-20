@@ -1,0 +1,34 @@
+section.topBar#header
+  .row.align-middle
+    .column.small-6
+      nav.topBar-menu
+        ul.menu
+          li.item.activeitem
+            a(href="")
+              span.fa.fa-home
+              span Inicio
+          li.item
+            a(href="")
+              span.fa.fa-bolt
+              span Momentos
+          li.item
+            a(href="")
+              span.fa.fa-bell-o
+              span Notificaciones
+          li.item
+            a(href="")
+              span.fa.fa-envelope-o
+              span Mensajes
+    .column.small-1
+      .topBar-icon
+        a.fa.fa-twitter
+    .column.small-5
+      .topBar-extra
+        .row.align-right.align-middle
+          .topBar-extra-search.columns.small-5
+            input(type="text" class="input" placeholder="Buscar en twitter")
+            span.fa.fa-search
+          .topBar-extra-user.columns.small-1
+            img.cover-small(src="images/alexa.jpg", alt="Alexandra Patiño Gutierrez")
+          .topBar-extra-twitear.columns.small-3
+            button.btn.btn-primary(type="submit") Twittear
